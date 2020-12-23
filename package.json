@@ -2,8 +2,21 @@
   "name": "js-ts-monotrepos",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:mike-north/js-ts-monorepos.git",
+  "repository": "git@github.com:ochilliam/js-ts-monorepos.git",
   "author": "Mike North <michael.l.north@gmail.com>",
   "license": "BSD-2-Clause",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "rimraf": "^3.0.2"
+  },
+  "volta": {
+    "node": "12.20.0",
+    "yarn": "1.22.10"
+  }
 }
